@@ -1,0 +1,219 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  background-color: #CFDBFF; }
+  footer .div1 {
+    display: flex;
+    align-items: center; }
+  footer .div2 {
+    display: flex;
+    justify-content: flex-end; }
+    footer .div2 img {
+      width: 70px;
+      height: 70px; }
+  footer .div3 {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+header nav .div-icono {
+  width: 100%;
+  display: flex;
+  background-color: #CFDBFF; }
+  header nav .div-icono .icono {
+    width: 80px;
+    height: 80px; }
+    header nav .div-icono .icono .ulsolo {
+      transition: all 0.3s ease; }
+      header nav .div-icono .icono .ulsolo .li-hover {
+        padding-right: 10px; }
+      header nav .div-icono .icono .ulsolo .li-hover:hover {
+        background-color: rgba(180, 156, 156, 0.5);
+        border-radius: 10px; }
+      header nav .div-icono .icono .ulsolo .li-hover:hover::before {
+        content: '🐾';
+        display: flex;
+        justify-content: center; }
+
+.divp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black; }
+
+.seccionpq {
+  padding: 100px 1rem;
+  min-height: 50hv;
+  background-color: #000000;
+  color: #CFDBFF;
+  border-radius: 50px; }
+
+.divpq {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 300px;
+  grid-template-areas: "a1 a2 a3"; }
+
+.h2pq {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 50px; }
+
+.div-00 {
+  border: 1px solid #CFDBFF;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem; }
+  .div-00 p {
+    text-align: center; }
+
+.div-10 {
+  grid-area: a1; }
+
+.div-20 {
+  grid-area: a2; }
+
+.div-30 {
+  grid-area: a3; }
+
+.enlasee a {
+  color: #a5adc5; }
+
+.flecha {
+  font-size: 25px;
+  -webkit-animation: shake-vertical 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  animation: shake-vertical 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both; }
+
+@keyframes shake-vertical {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  80% {
+    -webkit-transform: translateY(6.4px);
+    transform: translateY(6.4px); }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+    transform: translateY(-6.4px); } }
+
+.arriba {
+  display: flex;
+  justify-content: center; }
+  .arriba .carta {
+    width: 80%;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    overflow: hidden;
+    object-fit: cover; }
+    .arriba .carta img {
+      object-fit: cover;
+      border-radius: 30px; }
+    .arriba .carta div p {
+      font-size: 16px; }
+
+.sepa {
+  padding: 10px; }
+
+.imgzoom {
+  transition: transform 0.3s ease; }
+
+.imgzoom:hover {
+  transform: scale(1.05); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+link {
+  text-decoration: none; }
+
+.quienesfondo {
+  background: white;
+  background: linear-gradient(180deg, white 10%, #cfdbff 50%, #eeeeee 90%);
+  color: black; }
+
+.titulogood {
+  -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
+
+h3 {
+  text-transform: uppercase; }
+
+a {
+  text-decoration: none; }
+
+.nombre0 {
+  color: black; }
+
+.nombre1 {
+  color: black; }
+
+.nombre2 {
+  color: pink; }
+
+.nombre3 {
+  color: pink; }
+
+@media (max-width: 991px) {
+  .li-hover:hover::before {
+    display: none; }
+  .div2 img {
+    width: 60px;
+    height: 60px; }
+  .divpq {
+    display: flex;
+    flex-direction: column; } }
+
+.invertir {
+  transform: scaleX(-1); }
+
+.imgzoom {
+  transition: transform 0.3s ease; }
+
+.imgzoom:hover {
+  transform: scale(1.05); }
+
+.contac-fondo {
+  background-image: url(../imagenes/fondo-tur.jpg); }
+
+.tabla-contac {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .tabla-contac tr {
+    height: 100px; }
+    .tabla-contac tr th {
+      width: 300px; }

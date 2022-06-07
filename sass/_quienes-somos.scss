@@ -1,0 +1,32 @@
+.arriba {
+    display: flex;
+    justify-content: center;
+
+    .carta {
+        width: 80%;
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        overflow: hidden;
+        object-fit: cover;
+        img {
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        div{
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+.sepa {
+    padding: 10px;
+}
+.imgzoom {
+    transition: transform 0.3s ease;
+}
+
+.imgzoom:hover {
+    transform: scale(1.05);
+}
